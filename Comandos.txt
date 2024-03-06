@@ -1,0 +1,23 @@
+# O pacote Rcmdr no R
+
+rm(list=ls(all=T))
+
+#Definição das configurações
+options(Rcmdr=
+          list(ask.to.exit = TRUE, ask.on.exit = TRUE, quit.R.on.close = FALSE,
+               number.messages = TRUE, retain.messages = TRUE, use.markdown = TRUE,
+               use.knitr = TRUE, log.font.family = "Courier New", default.font.family = "Segoe UI",
+               log.font.size = 10, default.font.size = "9", log.width = 80,
+               log.height = 10, log.commands = TRUE, output.height = 0,
+               scientific.notation = 5, console.output = FALSE, default.contrasts = c("contr.Treatment",
+                                                                                     "contr.poly"), grab.focus = TRUE, double.click = FALSE, sort.names = TRUE,
+               show.edit.button = TRUE, suppress.icon.images = FALSE, retain.selections = TRUE,
+               use.rgl = TRUE, log.text.color = "black", command.text.color = "darkred",
+               output.text.color = "blue4", error.text.color = "red", warning.text.color = "darkgreen",
+               title.color = "#0046D5", theme = "vista")
+)
+
+
+#Instalação e carregamento do pacote
+install.packages("Rcmdr")
+library("Rcmdr")
